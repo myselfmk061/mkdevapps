@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'AppVerse Portfolio',
+  title: 'Myselfmk Apps',
   description: 'A modern portfolio website designed to showcase your collection of apps.',
 };
 
