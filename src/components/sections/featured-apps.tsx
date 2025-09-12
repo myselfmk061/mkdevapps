@@ -13,7 +13,7 @@ export function FeaturedApps() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Featured Apps</h2>
             <p className="mx-auto max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Check out some of my top projects. Each app is designed with the user in mind, focusing on a clean interface and a great experience.
+              Take a peek at some of my proudest work. I've focused on creating apps that are not just functional, but also a joy to use.
             </p>
           </div>
         </div>
