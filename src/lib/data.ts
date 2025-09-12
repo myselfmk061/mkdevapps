@@ -16,7 +16,7 @@ export const appCategories: string[] = [];
 export const apps: App[] = [];
 
 export const aboutMe = {
-  name: "Myselfmk",
+  name: "Mahendra Bairwa (MK)",
   title: "Creative App Developer",
   bio: "I'm a passionate and results-oriented app developer with a knack for creating intuitive and engaging user experiences. With a strong foundation in both design and development, I enjoy turning complex problems into beautiful, functional, and user-centric mobile applications.",
   profileImageId: "profile-pic",
