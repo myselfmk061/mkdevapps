@@ -41,6 +41,13 @@ export const aboutMe = {
     "REST APIs",
     "Supabase",
     "Database"
+  ],
+  aiSkills: [
+    "Genkit",
+    "Gemini",
+    "Large Language Models (LLMs)",
+    "Prompt Engineering",
+    "Retrieval-Augmented Generation (RAG)"
   ]
 };
 

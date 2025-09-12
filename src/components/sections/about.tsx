@@ -66,6 +66,17 @@ export function About() {
                 ))}
               </div>
             </div>
+            <Separator />
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold tracking-tight">AI Skills</h3>
+              <div className="flex flex-wrap gap-2">
+                {aboutMe.aiSkills.map((skill) => (
+                  <Badge key={skill} variant="secondary" className="text-base px-3 py-1">
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
