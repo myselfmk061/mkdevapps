@@ -33,7 +33,12 @@ export const aboutMe = {
     "Vercel",
     "GitHub",
     "HTML",
-    "CSS"
+    "CSS",
+    "GraphQL",
+    "Jest",
+    "Docker",
+    "PostgreSQL",
+    "REST APIs"
   ]
 };
 
