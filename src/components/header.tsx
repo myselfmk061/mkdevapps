@@ -6,6 +6,7 @@ export function Header() {
     { href: '/#apps', label: 'Apps' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
+    { href: '/admin', label: 'Admin' },
   ];
 
   return (
