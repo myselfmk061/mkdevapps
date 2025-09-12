@@ -15,7 +15,7 @@ export function Hero() {
             <Link href="/contact">
               <Button>Get in Touch</Button>
             </Link>
-            <Link href="/#apps">
+            <Link href="/apps">
               <Button variant="secondary">Browse Apps</Button>
             </Link>
           </div>
