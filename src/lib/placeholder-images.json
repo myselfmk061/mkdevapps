@@ -1,4 +1,11 @@
 
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "default-logo",
+      "description": "Default app logo",
+      "imageUrl": "https://picsum.photos/seed/default-logo/64/64",
+      "imageHint": "app logo"
+    }
+  ]
 }

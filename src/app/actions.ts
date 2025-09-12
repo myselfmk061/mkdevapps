@@ -2,6 +2,8 @@
 
 import * as z from 'zod';
 import { cookies } from 'next/headers';
+import { apps, appCategories } from '@/lib/data';
+import { revalidatePath } from 'next/cache';
 
 const contactFormSchema = z.object({
   name: z.string().min(2),
@@ -72,5 +74,54 @@ export async function login(values: z.infer<typeof loginFormSchema>): Promise<Fo
   return {
     success: false,
     message: 'Invalid username or password.',
+  };
+}
+
+
+const addAppFormSchema = z.object({
+  name: z.string().min(2, { message: 'App name must be at least 2 characters.' }),
+  summary: z.string().min(10, { message: 'Summary must be at least 10 characters.' }),
+  category: z.string().min(2, { message: 'Category must be at least 2 characters.' }),
+  appStoreUrl: z.string().url({ message: 'Please enter a valid URL.' }).optional().or(z.literal('')),
+  playStoreUrl: z.string().url({ message: 'Please enter a valid URL.' }).optional().or(z.literal('')),
+});
+
+
+export async function addApp(values: z.infer<typeof addAppFormSchema>): Promise<FormState> {
+  const validatedFields = addAppFormSchema.safeParse(values);
+
+  if (!validatedFields.success) {
+    return {
+      success: false,
+      message: 'Invalid form data. Please check your inputs.',
+    };
+  }
+
+  const { name, summary, category, appStoreUrl, playStoreUrl } = validatedFields.data;
+
+  // NOTE: This is a temporary in-memory solution. Data will be lost on server restart.
+  const newApp = {
+    id: `app-${Date.now()}`,
+    name,
+    summary,
+    category,
+    appStoreUrl: appStoreUrl || '#',
+    playStoreUrl: playStoreUrl || '#',
+    logoId: 'default-logo', // Using a default logo for now
+  };
+
+  apps.push(newApp);
+
+  if (!appCategories.includes(category)) {
+    appCategories.push(category);
+  }
+
+  console.log('New app added:', newApp);
+  revalidatePath('/');
+  revalidatePath('/admin');
+
+  return {
+    success: true,
+    message: 'App added successfully!',
   };
 }
