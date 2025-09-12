@@ -52,7 +52,12 @@ export const aboutMe = {
     "PyTorch",
     "Natural Language Processing (NLP)",
     "Vector Databases",
-    "Fine-tuning Models"
+    "Fine-tuning Models",
+    "OpenAI",
+    "ChatGPT",
+    "GitHub Copilot",
+    "Microsoft Copilot",
+    "Gemini 2.5 Flash Image (a.k.a. nano-banana)"
   ]
 };
 
