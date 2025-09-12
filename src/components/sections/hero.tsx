@@ -17,10 +17,10 @@ export function Hero() {
             </p>
           </div>
           <div className="space-x-4">
-            <Link href="#contact">
+            <Link href="/contact">
               <Button>Get in Touch</Button>
             </Link>
-            <Link href="#apps">
+            <Link href="/#apps">
               <Button variant="secondary">Browse Apps</Button>
             </Link>
           </div>

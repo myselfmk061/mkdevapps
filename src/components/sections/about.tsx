@@ -44,7 +44,7 @@ export function About() {
                 </Link>
               </Button>
               <Button variant="outline" size="icon" asChild>
-                <Link href="#contact" aria-label="Email">
+                <Link href="/contact" aria-label="Email">
                   <Mail className="h-5 w-5" />
                 </Link>
               </Button>
