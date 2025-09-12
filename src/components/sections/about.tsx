@@ -19,8 +19,8 @@ export function About() {
                 src={profileImage.imageUrl}
                 alt={profileImage.description}
                 data-ai-hint={profileImage.imageHint}
-                width={300}
-                height={300}
+                width={450}
+                height={450}
                 className="rounded-full object-cover shadow-lg"
               />
             )}
