@@ -8,7 +8,7 @@ export function Hero() {
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline">
-              Welcome to Myselfmk Apps
+              Portfolio
             </h1>
             <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
               A curated collection of modern, user-friendly applications. Explore my work below.
