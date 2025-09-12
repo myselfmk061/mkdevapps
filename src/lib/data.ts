@@ -28,7 +28,12 @@ export const aboutMe = {
     "TypeScript",
     "Node.js",
     "Firebase",
-    "UI/UX Design"
+    "UI/UX Design",
+    "Next.js",
+    "Vercel",
+    "GitHub",
+    "HTML",
+    "CSS"
   ]
 };
 
