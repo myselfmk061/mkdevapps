@@ -2,13 +2,19 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 export function Hero() {
+  const text = "Hello";
+  
   return (
     <section className="w-full py-24 md:py-32 lg:py-40">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline">
-              Welcome to Myselfmk App's Portfolios
+            <h1 className="text-8xl font-hello tracking-tighter text-primary animated-hello">
+              {text.split('').map((char, index) => (
+                <span key={index} style={{ animationDelay: `${index * 0.2}s` }}>
+                  {char}
+                </span>
+              ))}
             </h1>
             <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
               A curated collection of modern, user-friendly applications. Explore my work below.

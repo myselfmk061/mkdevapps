@@ -13,6 +13,7 @@ export default {
         body: ['Inter', 'sans-serif'],
         headline: ['Inter', 'sans-serif'],
         code: ['monospace'],
+        hello: ['"Cedarville Cursive"', 'cursive'],
       },
       colors: {
         background: 'hsl(var(--background))',
