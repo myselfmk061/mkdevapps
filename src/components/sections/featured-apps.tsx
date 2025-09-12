@@ -12,9 +12,6 @@ export function FeaturedApps() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Featured Apps</h2>
-            <p className="mx-auto max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Take a peek at some of my proudest work. From productivity tools to creative outlets, each project is a testament to my commitment to quality, user-centric design, and cutting-edge technology. Explore the apps below to see what I've been building.
-            </p>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 py-12 sm:grid-cols-2 md:grid-cols-3">
@@ -22,7 +19,10 @@ export function FeaturedApps() {
             <AppCard key={app.id} app={app} />
           ))}
         </div>
-        <div className="flex justify-center">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <p className="mx-auto max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Take a peek at some of my proudest work. From productivity tools to creative outlets, each project is a testament to my commitment to quality, user-centric design, and cutting-edge technology. Explore the apps below to see what I've been building.
+            </p>
           <Link href="/apps">
             <Button variant="outline">View All Apps</Button>
           </Link>
