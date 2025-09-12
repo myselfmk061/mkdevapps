@@ -27,7 +27,7 @@ export function Header() {
           <span className="font-bold sm:inline-block">Myselfmk Apps</span>
         </Link>
         <nav className="hidden items-center gap-4 text-sm md:flex lg:gap-6">
-          {navLinks.slice(1).map((link) => (
+          {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
