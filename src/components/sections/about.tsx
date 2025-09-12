@@ -15,14 +15,15 @@ export function About() {
         <div className="grid items-start gap-12 lg:grid-cols-2">
           <div className="flex flex-col items-center justify-center space-y-6">
             {profileImage && (
-              <Image
-                src={profileImage.imageUrl}
-                alt={profileImage.description}
-                data-ai-hint={profileImage.imageHint}
-                width={450}
-                height={450}
-                className="rounded-full object-cover shadow-lg"
-              />
+              <div className="relative w-[300px] h-[300px] md:w-[450px] md:h-[450px]">
+                <Image
+                  src={profileImage.imageUrl}
+                  alt={profileImage.description}
+                  data-ai-hint={profileImage.imageHint}
+                  fill
+                  className="rounded-full object-cover shadow-lg"
+                />
+              </div>
             )}
             <div className="text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">{aboutMe.name}</h2>
