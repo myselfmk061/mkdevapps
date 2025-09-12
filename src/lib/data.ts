@@ -47,7 +47,12 @@ export const aboutMe = {
     "Gemini",
     "Large Language Models (LLMs)",
     "Prompt Engineering",
-    "Retrieval-Augmented Generation (RAG)"
+    "Retrieval-Augmented Generation (RAG)",
+    "TensorFlow",
+    "PyTorch",
+    "Natural Language Processing (NLP)",
+    "Vector Databases",
+    "Fine-tuning Models"
   ]
 };
 
