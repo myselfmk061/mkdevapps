@@ -10,7 +10,7 @@
     {
       "id": "profile-pic",
       "description": "A portrait of the developer",
-      "imageUrl": "https://picsum.photos/seed/profile-pic/300/300",
+      "imageUrl": "https://picsum.photos/seed/new-profile-pic/300/300",
       "imageHint": "portrait person"
     }
   ]
