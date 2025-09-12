@@ -15,7 +15,7 @@ export function FeaturedApps() {
           ))}
         </div>
         <div className="flex flex-col items-center justify-center space-y-4 text-center mt-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Featured Apps</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-aleo">Featured Apps</h2>
             <p className="mx-auto max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Take a peek at some of my proudest work. From productivity tools to creative outlets, each project is a testament to my commitment to quality, user-centric design, and cutting-edge technology. Explore the apps below to see what I've been building.
             </p>

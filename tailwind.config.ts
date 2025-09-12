@@ -14,6 +14,7 @@ export default {
         headline: ['Ubuntu', 'sans-serif'],
         code: ['monospace'],
         hello: ['"Cedarville Cursive"', 'cursive'],
+        aleo: ['"Aleo"', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
