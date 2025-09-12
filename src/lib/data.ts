@@ -38,7 +38,9 @@ export const aboutMe = {
     "Jest",
     "Docker",
     "PostgreSQL",
-    "REST APIs"
+    "REST APIs",
+    "Supabase",
+    "Database"
   ]
 };
 
