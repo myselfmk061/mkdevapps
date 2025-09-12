@@ -91,14 +91,16 @@ body {
 }
 
 @layer utilities {
-  .animated-hello span {
-    opacity: 0;
-    animation: fadeIn 0.5s forwards;
+  .animated-hello-pulse {
+    animation: pulse 2s infinite;
   }
 
-  @keyframes fadeIn {
-    to {
+  @keyframes pulse {
+    0%, 100% {
       opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
     }
   }
 }
