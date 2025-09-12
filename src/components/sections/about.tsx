@@ -57,7 +57,7 @@ export function About() {
             </div>
             <Separator />
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold tracking-tight">My Skills</h3>
+              <h3 className="text-2xl font-bold tracking-tight">Skills</h3>
               <div className="flex flex-wrap gap-2">
                 {aboutMe.skills.map((skill) => (
                   <Badge key={skill} variant="secondary" className="text-base px-3 py-1">
