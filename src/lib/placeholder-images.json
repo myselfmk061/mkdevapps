@@ -1,35 +1,4 @@
 
 {
-  "placeholderImages": [
-    {
-      "id": "app_logo_1",
-      "description": "Logo for TaskMaster app",
-      "imageUrl": "https://picsum.photos/seed/101/128/128",
-      "imageHint": "abstract logo"
-    },
-    {
-      "id": "app_logo_2",
-      "description": "Logo for ConnectSphere app",
-      "imageUrl": "https://picsum.photos/seed/102/128/128",
-      "imageHint": "network logo"
-    },
-    {
-      "id": "app_logo_3",
-      "description": "Logo for WalletWise app",
-      "imageUrl": "https://picsum.photos/seed/103/128/128",
-      "imageHint": "finance logo"
-    },
-    {
-      "id": "app_logo_4",
-      "description": "Logo for EventHorizon app",
-      "imageUrl": "https://picsum.photos/seed/104/128/128",
-      "imageHint": "calendar logo"
-    },
-    {
-      "id": "developer_profile",
-      "description": "Profile picture of the developer, Alex Doe",
-      "imageUrl": "https://picsum.photos/seed/201/256/256",
-      "imageHint": "person portrait"
-    }
-  ]
+  "placeholderImages": []
 }
