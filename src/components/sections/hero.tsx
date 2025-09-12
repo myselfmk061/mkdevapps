@@ -8,9 +8,9 @@ export function Hero() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">
-            <p className="font-hello text-4xl text-muted-foreground animated-hello-pulse">Welcome to</p>
+            <p className="font-hello text-4xl text-muted-foreground animated-hello-pulse">Welcome</p>
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-              Myselfmk Apps Portfolios
+              Myselfmk Apps
             </h1>
             <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
               A curated collection of modern, user-friendly applications. Explore my work below.
