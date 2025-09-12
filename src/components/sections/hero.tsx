@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { aboutMe } from '@/lib/data';
 
 export function Hero() {
   return (
@@ -7,6 +8,9 @@ export function Hero() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+              {aboutMe.name}
+            </h1>
             <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
               A curated collection of modern, user-friendly applications. Explore my work below.
             </p>
