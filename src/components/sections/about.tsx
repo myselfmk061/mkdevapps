@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 import { aboutMe, findImage } from '@/lib/data';
 import { Separator } from '@/components/ui/separator';
 
@@ -11,8 +12,8 @@ export function About() {
   return (
     <section id="about" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
-        <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
-          <div className="flex justify-center">
+        <div className="grid items-start gap-12 lg:grid-cols-2">
+          <div className="flex flex-col items-center justify-center space-y-6">
             {profileImage && (
               <Image
                 src={profileImage.imageUrl}
@@ -20,17 +21,12 @@ export function About() {
                 data-ai-hint={profileImage.imageHint}
                 width={300}
                 height={300}
-                className="rounded-full object-cover"
+                className="rounded-full object-cover shadow-lg"
               />
             )}
-          </div>
-          <div className="flex flex-col justify-center space-y-4">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">About Me</h2>
-              <p className="text-2xl font-semibold text-primary">{aboutMe.title}</p>
-              <p className="max-w-[600px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                {aboutMe.bio}
-              </p>
+            <div className="text-center">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">{aboutMe.name}</h2>
+                <p className="text-xl font-semibold text-primary">{aboutMe.title}</p>
             </div>
             <div className="flex items-center space-x-4">
               <Button variant="outline" size="icon" asChild>
@@ -48,6 +44,25 @@ export function About() {
                   <Mail className="h-5 w-5" />
                 </Link>
               </Button>
+            </div>
+          </div>
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold tracking-tight">About Me</h3>
+              <p className="text-foreground/80 text-lg">
+                {aboutMe.bio}
+              </p>
+            </div>
+            <Separator />
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold tracking-tight">My Skills</h3>
+              <div className="flex flex-wrap gap-2">
+                {aboutMe.skills.map((skill) => (
+                  <Badge key={skill} variant="secondary" className="text-base px-3 py-1">
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
             </div>
           </div>
         </div>

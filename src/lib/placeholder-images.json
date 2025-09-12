@@ -6,6 +6,12 @@
       "description": "Default app logo",
       "imageUrl": "https://picsum.photos/seed/default-logo/64/64",
       "imageHint": "app logo"
+    },
+    {
+      "id": "profile-pic",
+      "description": "A portrait of the developer",
+      "imageUrl": "https://picsum.photos/seed/profile-pic/300/300",
+      "imageHint": "portrait person"
     }
   ]
 }
