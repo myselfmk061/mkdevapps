@@ -26,20 +26,7 @@ export function Header() {
           <Aperture className="h-6 w-6 text-primary" />
           <span className="font-bold sm:inline-block">Myselfmk Apps</span>
         </Link>
-        <nav className="hidden items-center gap-4 text-sm md:flex lg:gap-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={cn(
-                "transition-colors hover:text-foreground/80",
-                pathname === link.href ? "text-foreground" : "text-foreground/60"
-              )}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+
         <div className="flex flex-1 items-center justify-end md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>

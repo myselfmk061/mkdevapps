@@ -25,14 +25,27 @@ export async function submitContactForm(values: z.infer<typeof contactFormSchema
       message: 'Invalid form data. Please check your inputs.',
     };
   }
-  
-  console.log('New contact form submission:');
-  console.log('Name:', validatedFields.data.name);
-  console.log('Email:', validatedFields.data.email);
-  console.log('Message:', validatedFields.data.message);
 
-  return {
-    success: true,
-    message: 'Message sent successfully!',
-  };
+  try {
+    const formData = new FormData();
+    formData.append('name', validatedFields.data.name);
+    formData.append('email', validatedFields.data.email);
+    formData.append('message', validatedFields.data.message);
+    formData.append('_captcha', 'false');
+    
+    const response = await fetch('https://formsubmit.co/myselfmkapps+contact@gmail.com', {
+      method: 'POST',
+      body: formData
+    });
+
+    return {
+      success: true,
+      message: 'Message sent successfully!',
+    };
+  } catch (error) {
+    return {
+      success: false,
+      message: 'Failed to send message. Please try again.',
+    };
+  }
 }
