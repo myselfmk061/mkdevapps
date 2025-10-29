@@ -10,7 +10,7 @@ export function Hero() {
           <div className="space-y-2">
             <p className="font-hello text-4xl text-muted-foreground animated-hello-pulse">Welcome</p>
             <h1 className="font-aleo text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-              Myselfmk Apps
+              MK Dev AppStore
             </h1>
             <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
               A curated collection of modern, user-friendly applications. Explore my work below.

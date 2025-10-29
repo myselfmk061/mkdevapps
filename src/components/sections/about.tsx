@@ -28,7 +28,7 @@ export function About() {
             <div className="text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">{aboutMe.name}</h2>
                 <p className="text-xl font-semibold text-primary">{aboutMe.title}</p>
-                <p className="text-lg text-muted-foreground">CEO of Myselfmk Apps</p>
+                <p className="text-lg text-muted-foreground">CEO of MK Dev AppStore</p>
             </div>
             <div className="flex items-center space-x-4">
               <Button variant="outline" size="icon" asChild>

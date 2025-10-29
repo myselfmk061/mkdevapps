@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Myselfmk Apps',
+  title: 'MK Dev AppStore',
   description: 'A modern portfolio website designed to showcase your collection of apps.',
 };
 
