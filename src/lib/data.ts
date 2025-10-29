@@ -17,8 +17,8 @@ export const apps: App[] = [];
 
 export const aboutMe = {
   name: "Mahendra Bairwa (MK)",
-  title: "Creative App Developer",
-  bio: "I'm the kind of person who gets excited about turning a cool idea into a real, working app that people can enjoy. For me, it's all about making technology feel intuitive and natural. I love the challenge of taking a complex problem and finding a simple, elegant solution that's both beautiful and functional.",
+  title: "CEO & Founder",
+  bio: "As CEO of MK Dev Company Ltd., I lead a passionate team in creating innovative digital solutions. With years of experience in app development and technology leadership, I focus on building products that make a real difference in people's lives. My vision is to bridge the gap between complex technology and user-friendly experiences.",
   profileImageId: "profile-pic",
   skills: [
     "React Native",
