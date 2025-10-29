@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -24,8 +23,25 @@ export function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Aperture className="h-6 w-6 text-primary" />
-          <span className="font-bold sm:inline-block">Myselfmk Apps</span>
+          <span className="font-bold sm:inline-block">MK Dev AppStore</span>
         </Link>
+
+        <nav className="hidden flex-1 md:flex md:justify-start">
+          <div className="flex items-center gap-4 text-sm lg:gap-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  "transition-colors hover:text-foreground/80",
+                  pathname === link.href ? "text-foreground" : "text-foreground/60"
+                )}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </nav>
 
         <div className="flex flex-1 items-center justify-end md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -46,7 +62,7 @@ export function Header() {
                   onClick={() => setIsOpen(false)}
                 >
                   <Aperture className="h-6 w-6 text-primary" />
-                  <span className="sr-only">Myselfmk Apps</span>
+                  <span className="sr-only">MK Dev AppStore</span>
                 </Link>
                 {navLinks.map((link) => (
                   <Link
